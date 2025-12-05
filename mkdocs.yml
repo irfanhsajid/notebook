@@ -87,6 +87,8 @@ nav:
 # Extra
 extra:
   generator: false
+  css:
+    - assets/css/custom.css
 
 # Copyright
 copyright: Copyright &copy; 2025 Irfan
