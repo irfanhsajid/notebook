@@ -1,8 +1,9 @@
 site_name: "Irfan's Notebook"
 site_description: "Personal knowledge base covering programming, web development, databases, and more"
 site_author: "Irfan"
-repo_url: https://github.com/irfanhsajid/irfans-notebook
-repo_name: irfans-notebook
+# Hiding repository info from navbar
+# repo_url: https://github.com/irfanhsajid/irfans-notebook
+# repo_name: irfans-notebook
 
 # Theme Configuration
 theme:
@@ -23,8 +24,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  icon:
-    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.tracking
@@ -91,9 +90,6 @@ nav:
 
 # Extra
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/irfanhsajid
   generator: false
 
 # Copyright
