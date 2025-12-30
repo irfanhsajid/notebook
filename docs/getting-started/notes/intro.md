@@ -50,7 +50,7 @@ Each guide is structured to provide:
 
 ## Contributing
 
-Found an error or have a suggestion? This documentation is [open source on GitHub](https://github.com/irfanhsajid/irfans-notebook).
+Found an error or have a suggestion? This documentation is [open source on GitHub](https://github.com/irfanhsajid/notebook).
 
 ## Getting Started
 

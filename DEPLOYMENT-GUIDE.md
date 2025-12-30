@@ -4,13 +4,13 @@ Your code has been successfully pushed to GitHub! Now follow these steps to enab
 
 ## ✅ Code Pushed Successfully
 
-Repository: https://github.com/irfanhsajid/irfans-notebook
+Repository: https://github.com/irfanhsajid/notebook
 
 ## 📝 Enable GitHub Pages
 
 ### Step 1: Go to Repository Settings
 
-1. Visit: https://github.com/irfanhsajid/irfans-notebook/settings
+1. Visit: https://github.com/irfanhsajid/notebook/settings
 2. Click on **Pages** in the left sidebar
 
 ### Step 2: Configure GitHub Pages
@@ -53,7 +53,7 @@ This usually takes 1-2 minutes.
 
 ### Step 4: Check Deployment Status
 
-1. Go to the **Actions** tab: https://github.com/irfanhsajid/irfans-notebook/actions
+1. Go to the **Actions** tab: https://github.com/irfanhsajid/notebook/actions
 2. You should see a "Deploy Documentation" workflow running
 3. Wait for it to complete (green checkmark ✓)
 
@@ -61,7 +61,7 @@ This usually takes 1-2 minutes.
 
 Once deployed, your site will be available at:
 
-**https://irfanhsajid.github.io/irfans-notebook/**
+**https://irfanhsajid.github.io/notebook/**
 
 ## 🔄 Future Updates
 
@@ -240,7 +240,7 @@ Your GitHub Pages site will show **404** because private repositories aren't sup
 
    - Option A: Push any change to `main` branch (triggers automatic deployment)
    - Option B: Manually trigger workflow:
-     - Go to: https://github.com/irfanhsajid/irfans-notebook/actions
+     - Go to: https://github.com/irfanhsajid/notebook/actions
      - Click "Deploy Documentation" workflow
      - Click "Run workflow" → "Run workflow" button
 
@@ -248,12 +248,46 @@ Your GitHub Pages site will show **404** because private repositories aren't sup
 
 4. **Clear browser cache** or try incognito mode
 
-5. **Verify the site** at: https://irfanhsajid.github.io/irfans-notebook/
+5. **Verify the site** at: https://irfanhsajid.github.io/notebook/
+
+### If repository was renamed:
+
+**⚠️ IMPORTANT: Repository rename resets GitHub Pages!**
+
+When you rename a repository (e.g., `irfans-notebook` → `notebook`), GitHub Pages settings are automatically reset.
+
+**What changes:**
+
+- Old URL: `irfanhsajid.github.io/irfans-notebook/` ❌ (no longer works)
+- New URL: `irfanhsajid.github.io/notebook/` ✅ (new URL)
+
+**Fix Steps:**
+
+1. **Re-enable GitHub Pages:**
+
+   - Go to: https://github.com/irfanhsajid/notebook/settings/pages
+   - Under **Source**, select:
+     - Branch: `gh-pages`
+     - Folder: `/ (root)`
+   - Click **Save**
+
+2. **Trigger a new deployment:**
+
+   - Option A: Push any change to `main` branch
+   - Option B: Manually trigger workflow:
+     - Go to: https://github.com/irfanhsajid/notebook/actions
+     - Click "Deploy Documentation" → "Run workflow"
+
+3. **Wait 2-5 minutes** for deployment to complete
+
+4. **Access your site** at the new URL: https://irfanhsajid.github.io/notebook/
+
+**Note:** The old URL will redirect for a while, but always use the new URL going forward.
 
 ## 📧 Need Help?
 
 Check the workflow logs at:
-https://github.com/irfanhsajid/irfans-notebook/actions
+https://github.com/irfanhsajid/notebook/actions
 
 ---
 

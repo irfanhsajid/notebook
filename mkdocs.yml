@@ -2,8 +2,8 @@ site_name: "Irfan's Notebook"
 site_description: "Learning Book - Learn, practice, code, and document programming topics."
 site_author: "Irfan H Sajid"
 # Hiding repository info from navbar
-# repo_url: https://github.com/irfanhsajid/irfans-notebook
-# repo_name: irfans-notebook
+# repo_url: https://github.com/irfanhsajid/notebook
+# repo_name: notebook
 
 # Theme Configuration
 theme:

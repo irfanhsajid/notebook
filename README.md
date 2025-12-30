@@ -15,8 +15,8 @@ A focused documentation site for modern web development, built with [MkDocs](htt
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/<YOUR_USERNAME>/irfans-notebook.git
-   cd irfans-notebook
+   git clone https://github.com/irfanhsajid/notebook.git
+   cd notebook
    ```
 
 2. **Install dependencies**
@@ -126,7 +126,7 @@ The repository includes a GitHub Actions workflow that automatically deploys to 
 3. **Wait for deployment**
    - GitHub Actions will automatically build and deploy
    - Check the Actions tab to monitor progress
-   - Site will be available at `https://<YOUR_USERNAME>.github.io/irfans-notebook/`
+   - Site will be available at `https://irfanhsajid.github.io/notebook/`
 
 ### Manual Deployment
 
@@ -188,7 +188,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🔗 Links
 
-- **Documentation Site**: https://irfanhsajid.github.io/irfans-notebook/
+- **Documentation Site**: https://irfanhsajid.github.io/notebook/
 - **MkDocs**: https://www.mkdocs.org/
 - **Material for MkDocs**: https://squidfunk.github.io/mkdocs-material/
 

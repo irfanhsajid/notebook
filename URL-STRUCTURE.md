@@ -5,7 +5,7 @@ All URLs now use **kebab-case** format for clean, SEO-friendly paths.
 ## Live URLs (After Deployment)
 
 ### Homepage
-- `https://irfanhsajid.github.io/irfans-notebook/`
+- `https://irfanhsajid.github.io/notebook/`
 
 ### Getting Started
 - `https://irfanhsajid.github.io/irfans-notebook/getting-started/`

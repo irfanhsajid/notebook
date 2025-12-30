@@ -54,4 +54,4 @@ This is a curated collection of development notes focused on the most essential 
 
 ---
 
-**GitHub**: [irfanhsajid/irfans-notebook](https://github.com/irfanhsajid/irfans-notebook)
+**GitHub**: [irfanhsajid/notebook](https://github.com/irfanhsajid/notebook)
