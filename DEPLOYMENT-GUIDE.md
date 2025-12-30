@@ -22,6 +22,25 @@ Repository: https://github.com/irfanhsajid/irfans-notebook
 
 2. Click **Save**
 
+> **⚠️ Why `gh-pages` branch and not `main`?**
+>
+> - **`main` branch** contains your **source files** (`.md` files, `mkdocs.yml`, etc.) - raw Markdown that needs to be compiled
+> - **`gh-pages` branch** contains the **built website** (HTML, CSS, JavaScript) - the actual website files that browsers can display
+>
+> When you use `main` branch, GitHub Pages tries to serve raw Markdown files, which results in:
+>
+> - ❌ Broken layout (no CSS styling)
+> - ❌ No navigation menu
+> - ❌ Raw Markdown text instead of formatted HTML
+> - ❌ Missing JavaScript functionality (search, theme toggle, etc.)
+>
+> The `mkdocs gh-deploy` command automatically:
+>
+> 1. Builds your site from source files (`main` branch)
+> 2. Converts Markdown → HTML with all styling and features
+> 3. Pushes the built files to `gh-pages` branch
+> 4. GitHub Pages serves the `gh-pages` branch → **Correct UI!** ✅
+
 ### Step 3: Wait for Deployment
 
 The GitHub Actions workflow will automatically:
@@ -55,6 +74,56 @@ git push origin main
 ```
 
 The site will automatically rebuild and redeploy!
+
+## 🔄 How `main` and `gh-pages` Stay in Sync
+
+**Important:** `gh-pages` doesn't merge with `main` - it's completely regenerated each time!
+
+**The Workflow:**
+
+1. **You push changes to `main`** (e.g., update a `.md` file)
+2. **GitHub Actions triggers** (automatically runs on every push to `main`)
+3. **The workflow:**
+   - Checks out the latest `main` branch
+   - Builds the site from current `main` source files
+   - Uses `--clean` flag to completely remove old `gh-pages` content
+   - Creates a fresh `gh-pages` branch with the new build
+   - Pushes it to GitHub
+
+**Why they look "diverged" in Git graph:**
+
+- `main` branch: Has commit history (your source file changes)
+- `gh-pages` branch: Only has deployment commits (one per deployment)
+- They don't share commit history because `gh-pages` is regenerated, not merged
+
+**Example timeline:**
+
+```
+main branch:     A → B → C → D → E  (your commits)
+                                    ↓
+gh-pages branch:                    [Deploy E]  (built from E)
+                                    ↓
+main branch:     A → B → C → D → E → F  (new commit)
+                                    ↓
+gh-pages branch:                    [Deploy E] → [Deploy F]  (rebuilt from F)
+```
+
+**Key point:** Every time you push to `main`, `gh-pages` is completely rebuilt from the current state of `main`. The old `gh-pages` content is replaced, not merged!
+
+**What the `--clean` flag does:**
+
+Looking at your workflow file (`.github/workflows/deploy.yml`), it uses:
+
+```yaml
+mkdocs gh-deploy --force --clean --verbose
+```
+
+The `--clean` flag ensures:
+
+- Old files in `gh-pages` are deleted
+- Only the newly built files are pushed
+- No leftover files from previous builds
+- Clean, consistent deployments every time
 
 ## 🎨 Site Features
 
@@ -104,6 +173,27 @@ https://irfanhsajid.github.io/irfans-notebook/
 1. Wait a few minutes for DNS propagation
 2. Clear browser cache
 3. Check that the Actions workflow completed successfully
+
+### If website shows wrong layout/broken UI:
+
+**This happens when GitHub Pages is set to `main` branch instead of `gh-pages`!**
+
+**Symptoms:**
+
+- ❌ Raw Markdown text visible
+- ❌ No navigation menu
+- ❌ No CSS styling
+- ❌ Missing JavaScript features (search, theme toggle)
+
+**Fix:**
+
+1. Go to: https://github.com/irfanhsajid/irfans-notebook/settings/pages
+2. Change **Source** from `main` → `gh-pages`
+3. Click **Save**
+4. Wait 1-2 minutes for GitHub Pages to update
+5. Refresh your site
+
+**Why?** `main` has source files (`.md`), `gh-pages` has built website files (`.html`, `.css`, `.js`)
 
 ### If repository visibility was changed (private ↔ public):
 
