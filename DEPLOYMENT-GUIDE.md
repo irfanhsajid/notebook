@@ -16,6 +16,7 @@ Repository: https://github.com/irfanhsajid/irfans-notebook
 ### Step 2: Configure GitHub Pages
 
 1. Under **Source**, select:
+
    - Branch: `gh-pages`
    - Folder: `/ (root)`
 
@@ -24,6 +25,7 @@ Repository: https://github.com/irfanhsajid/irfans-notebook
 ### Step 3: Wait for Deployment
 
 The GitHub Actions workflow will automatically:
+
 1. Build your MkDocs site
 2. Create/update the `gh-pages` branch
 3. Deploy to GitHub Pages
@@ -103,6 +105,34 @@ https://irfanhsajid.github.io/irfans-notebook/
 2. Clear browser cache
 3. Check that the Actions workflow completed successfully
 
+### If repository visibility was changed (private ↔ public):
+
+**This is a common issue!** When you change repository visibility, GitHub Pages settings may be reset.
+
+**Fix Steps:**
+
+1. **Re-enable GitHub Pages:**
+
+   - Go to: https://github.com/irfanhsajid/irfans-notebook/settings/pages
+   - Under **Source**, select:
+     - Branch: `gh-pages`
+     - Folder: `/ (root)`
+   - Click **Save**
+
+2. **Trigger a new deployment:**
+
+   - Option A: Push any change to `main` branch (triggers automatic deployment)
+   - Option B: Manually trigger workflow:
+     - Go to: https://github.com/irfanhsajid/irfans-notebook/actions
+     - Click "Deploy Documentation" workflow
+     - Click "Run workflow" → "Run workflow" button
+
+3. **Wait 2-5 minutes** for GitHub Pages to rebuild
+
+4. **Clear browser cache** or try incognito mode
+
+5. **Verify the site** at: https://irfanhsajid.github.io/irfans-notebook/
+
 ## 📧 Need Help?
 
 Check the workflow logs at:
@@ -111,4 +141,3 @@ https://github.com/irfanhsajid/irfans-notebook/actions
 ---
 
 **Happy documenting!** 🚀
-
