@@ -76,15 +76,17 @@ nav:
   - Home: index.md
   - Notes:
       - Getting Started:
-          - Introduction: getting-started/notes/intro.md
+          - Introduction: getting-started/index.md
       - Frontend Development:
+          - Overview: frontend-development/index.md
           - React: frontend-development/react/index.md
           - Next.js: frontend-development/nextjs/index.md
       - Databases:
-          - Overview: databases/database/index.md
+          - Overview: databases/index.md
           - MongoDB: databases/database/mongodb.md
           - PostgreSQL: databases/database/postgresql.md
           - MySQL: databases/database/mysql.md
+          - SQLite: databases/database/sqlite.md
       - DevOps:
           - Docker: devops/docker/index.md
 
