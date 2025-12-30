@@ -199,7 +199,34 @@ https://irfanhsajid.github.io/irfans-notebook/
 
 **This is a common issue!** When you change repository visibility, GitHub Pages settings may be reset.
 
-**Fix Steps:**
+**⚠️ IMPORTANT: GitHub Pages Plan Requirements**
+
+- **GitHub Free Plan**: ❌ GitHub Pages only works with **public repositories**
+- **GitHub Pro/Team/Enterprise**: ✅ GitHub Pages works with both public and private repositories
+
+**If you're on a free plan and made your repo private:**
+
+Your GitHub Pages site will show **404** because private repositories aren't supported on free plans.
+
+**Your Options:**
+
+1. **Make repository public** (recommended for free plan)
+
+   - Go to: https://github.com/irfanhsajid/irfans-notebook/settings
+   - Scroll to "Danger Zone"
+   - Click "Change visibility" → "Make public"
+   - Then re-enable GitHub Pages (see steps below)
+
+2. **Upgrade to GitHub Pro** ($4/month)
+
+   - Allows GitHub Pages with private repositories
+   - Visit: https://github.com/pricing
+
+3. **Use alternative hosting** (if you need private repo + free hosting)
+   - Netlify, Vercel, Cloudflare Pages (all support private repos)
+   - Requires updating deployment workflow
+
+**Fix Steps (after making repo public):**
 
 1. **Re-enable GitHub Pages:**
 
