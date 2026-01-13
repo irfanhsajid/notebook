@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../frontend-development/nextjs/">
+        <link rel="prev" href="../frontend-development/react-native/">
       
       
-        <link rel="next" href="database/mongodb/">
+        <link rel="next" href="mongodb/">
       
       
         
@@ -413,6 +413,8 @@
       
         
       
+        
+      
     
     
     
@@ -520,6 +522,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontend-development/react-native/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React Native
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -609,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="database/mongodb/" class="md-nav__link">
+      <a href="mongodb/" class="md-nav__link">
         
   
   
@@ -637,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="database/postgresql/" class="md-nav__link">
+      <a href="postgresql/" class="md-nav__link">
         
   
   
@@ -665,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="database/mysql/" class="md-nav__link">
+      <a href="mysql/" class="md-nav__link">
         
   
   
@@ -693,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="database/sqlite/" class="md-nav__link">
+      <a href="sqlite/" class="md-nav__link">
         
   
   
@@ -862,15 +892,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#choosing-a-database" class="md-nav__link">
+  <a href="#choosing-the-right-database" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Choosing a Database
+        Choosing the Right Database
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Choosing a Database">
+    <nav class="md-nav" aria-label="Choosing the Right Database">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -912,10 +942,367 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-links" class="md-nav__link">
+  <a href="#common-database-operations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Links
+        Common Database Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Database Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-nodejs-with-pg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL (Node.js with pg)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql-nodejs-with-mysql2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MySQL (Node.js with mysql2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb-nodejs-with-mongodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB (Node.js with mongodb)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crud-operations-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRUD Operations Comparison
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CRUD Operations Comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create (Insert)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create (Insert)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresqlmysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL/MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read (Select)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Read (Select)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresqlmysql_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL/MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Update">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresqlmysql_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL/MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Delete">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresqlmysql_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL/MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-pooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection Pooling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indexing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresqlmysql_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL/MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sql-injection-prevention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SQL Injection Prevention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb-injection-prevention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB Injection Prevention
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Variables
       
     </span>
   </a>
@@ -923,10 +1310,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-operations" class="md-nav__link">
+  <a href="#docker-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common Operations
+        Docker Setup
       
     </span>
   </a>
@@ -1025,57 +1412,184 @@
 
 
 <h1 id="databases">Databases<a class="headerlink" href="#databases" title="Permanent link">&para;</a></h1>
-<p>Learn how to work with different types of databases for your applications.</p>
+<p>A comprehensive guide to working with databases, focusing on MongoDB, PostgreSQL, and MySQL.</p>
 <h2 id="database-types">Database Types<a class="headerlink" href="#database-types" title="Permanent link">&para;</a></h2>
 <h3 id="sql-databases-relational">SQL Databases (Relational)<a class="headerlink" href="#sql-databases-relational" title="Permanent link">&para;</a></h3>
-<p>Structured data with predefined schemas and relationships:</p>
 <ul>
-<li><strong><a href="database/postgresql/">PostgreSQL</a></strong> - Advanced features, JSON support</li>
-<li><strong><a href="database/mysql/">MySQL</a></strong> - Fast, reliable, widely supported</li>
+<li><strong>PostgreSQL</strong>: Advanced open-source relational database</li>
+<li><strong>MySQL</strong>: Popular open-source relational database</li>
 </ul>
 <h3 id="nosql-databases">NoSQL Databases<a class="headerlink" href="#nosql-databases" title="Permanent link">&para;</a></h3>
-<p>Flexible schemas for evolving data structures:</p>
 <ul>
-<li><strong><a href="database/mongodb/">MongoDB</a></strong> - Document-oriented database</li>
+<li><strong>MongoDB</strong>: Document-oriented database</li>
 </ul>
-<h2 id="choosing-a-database">Choosing a Database<a class="headerlink" href="#choosing-a-database" title="Permanent link">&para;</a></h2>
+<h2 id="choosing-the-right-database">Choosing the Right Database<a class="headerlink" href="#choosing-the-right-database" title="Permanent link">&para;</a></h2>
 <h3 id="use-postgresql-when">Use PostgreSQL When:<a class="headerlink" href="#use-postgresql-when" title="Permanent link">&para;</a></h3>
 <ul>
-<li>You need advanced SQL features</li>
-<li>JSON support is required</li>
+<li>You need complex queries and joins</li>
 <li>ACID compliance is critical</li>
-<li>Complex queries and joins are common</li>
+<li>You need advanced features (JSON support, full-text search)</li>
+<li>Data integrity is paramount</li>
 </ul>
 <h3 id="use-mysql-when">Use MySQL When:<a class="headerlink" href="#use-mysql-when" title="Permanent link">&para;</a></h3>
 <ul>
-<li>You need a simple, fast database</li>
-<li>Building web applications</li>
-<li>Read-heavy workloads</li>
-<li>Wide hosting support needed</li>
+<li>You need a simple, fast relational database</li>
+<li>You're building a web application</li>
+<li>You want wide hosting support</li>
+<li>Read-heavy operations are common</li>
 </ul>
 <h3 id="use-mongodb-when">Use MongoDB When:<a class="headerlink" href="#use-mongodb-when" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Schema flexibility is important</li>
-<li>Working with JSON-like documents</li>
-<li>Horizontal scaling is required</li>
-<li>Rapid development with changing requirements</li>
+<li>You have flexible, evolving schemas</li>
+<li>You're working with JSON-like documents</li>
+<li>Horizontal scaling is important</li>
+<li>You need high write throughput</li>
 </ul>
-<h2 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="database/">Database Overview</a></li>
-<li><a href="database/mongodb/">MongoDB Guide</a></li>
-<li><a href="database/postgresql/">PostgreSQL Guide</a></li>
-<li><a href="database/mysql/">MySQL Guide</a></li>
-</ul>
-<h2 id="common-operations">Common Operations<a class="headerlink" href="#common-operations" title="Permanent link">&para;</a></h2>
-<p>All guides include:</p>
-<ul>
-<li>✅ Installation with Docker</li>
-<li>✅ Connection examples</li>
-<li>✅ CRUD operations</li>
-<li>✅ Best practices</li>
-<li>✅ Security tips</li>
-</ul>
+<h2 id="common-database-operations">Common Database Operations<a class="headerlink" href="#common-database-operations" title="Permanent link">&para;</a></h2>
+<h3 id="connection-examples">Connection Examples<a class="headerlink" href="#connection-examples" title="Permanent link">&para;</a></h3>
+<h4 id="postgresql-nodejs-with-pg">PostgreSQL (Node.js with pg)<a class="headerlink" href="#postgresql-nodejs-with-pg" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Pool</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;pg&quot;</span><span class="p">);</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">pool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Pool</span><span class="p">({</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;username&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nx">host</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nx">database</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;mydb&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;password&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nx">port</span><span class="o">:</span><span class="w"> </span><span class="mf">5432</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">});</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1">// Query</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">pool</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM users WHERE id = $1&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">]);</span>
+</code></pre></div>
+<h4 id="mysql-nodejs-with-mysql2">MySQL (Node.js with mysql2)<a class="headerlink" href="#mysql-nodejs-with-mysql2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mysql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;mysql2/promise&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">mysql</span><span class="p">.</span><span class="nx">createConnection</span><span class="p">({</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nx">host</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;username&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;password&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nx">database</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;mydb&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">});</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1">// Query</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">rows</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">connection</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM users WHERE id = ?&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="mf">1</span><span class="p">,</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">]);</span>
+</code></pre></div>
+<h4 id="mongodb-nodejs-with-mongodb">MongoDB (Node.js with mongodb)<a class="headerlink" href="#mongodb-nodejs-with-mongodb" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">MongoClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;mongodb&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb://localhost:27017&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">();</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">db</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">db</span><span class="p">(</span><span class="s2">&quot;mydb&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">collection</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">// Query</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span><span class="w"> </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h2 id="crud-operations-comparison">CRUD Operations Comparison<a class="headerlink" href="#crud-operations-comparison" title="Permanent link">&para;</a></h2>
+<h3 id="create-insert">Create (Insert)<a class="headerlink" href="#create-insert" title="Permanent link">&para;</a></h3>
+<h4 id="postgresqlmysql">PostgreSQL/MySQL<a class="headerlink" href="#postgresqlmysql" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;John Doe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;john@example.com&#39;</span><span class="p">);</span>
+</code></pre></div>
+<h4 id="mongodb">MongoDB<a class="headerlink" href="#mongodb" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">insertOne</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;john@example.com&quot;</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h3 id="read-select">Read (Select)<a class="headerlink" href="#read-select" title="Permanent link">&para;</a></h3>
+<h4 id="postgresqlmysql_1">PostgreSQL/MySQL<a class="headerlink" href="#postgresqlmysql_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;john@example.com&#39;</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="mongodb_1">MongoDB<a class="headerlink" href="#mongodb_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span><span class="w"> </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;john@example.com&quot;</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h3 id="update">Update<a class="headerlink" href="#update" title="Permanent link">&para;</a></h3>
+<h4 id="postgresqlmysql_2">PostgreSQL/MySQL<a class="headerlink" href="#postgresqlmysql_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Jane Doe&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="mongodb_2">MongoDB<a class="headerlink" href="#mongodb_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">updateOne</span><span class="p">({</span><span class="w"> </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$set</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Jane Doe&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h3 id="delete">Delete<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h3>
+<h4 id="postgresqlmysql_3">PostgreSQL/MySQL<a class="headerlink" href="#postgresqlmysql_3" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="mongodb_3">MongoDB<a class="headerlink" href="#mongodb_3" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">deleteOne</span><span class="p">({</span><span class="w"> </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="connection-pooling">Connection Pooling<a class="headerlink" href="#connection-pooling" title="Permanent link">&para;</a></h3>
+<p>Always use connection pooling for better performance:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">// PostgreSQL</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">pool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Pool</span><span class="p">({</span><span class="w"> </span><span class="nx">max</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="w"> </span><span class="p">});</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1">// MySQL</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">pool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">mysql</span><span class="p">.</span><span class="nx">createPool</span><span class="p">({</span><span class="w"> </span><span class="nx">connectionLimit</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="p">});</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c1">// MongoDB</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MongoClient</span><span class="p">(</span><span class="nx">uri</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">maxPoolSize</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h3 id="indexing">Indexing<a class="headerlink" href="#indexing" title="Permanent link">&para;</a></h3>
+<p>Create indexes on frequently queried fields:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">-- PostgreSQL/MySQL</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_user_email</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">users</span><span class="p">(</span><span class="n">email</span><span class="p">);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">// MongoDB</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">createIndex</span><span class="p">({</span><span class="w"> </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h3 id="transactions">Transactions<a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h3>
+<h4 id="postgresqlmysql_4">PostgreSQL/MySQL<a class="headerlink" href="#postgresqlmysql_4" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">pool</span><span class="p">.</span><span class="nx">getConnection</span><span class="p">();</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">await</span><span class="w"> </span><span class="nx">connection</span><span class="p">.</span><span class="nx">beginTransaction</span><span class="p">();</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">connection</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO users ...&quot;</span><span class="p">);</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">connection</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO orders ...&quot;</span><span class="p">);</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">connection</span><span class="p">.</span><span class="nx">commit</span><span class="p">();</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">connection</span><span class="p">.</span><span class="nx">rollback</span><span class="p">();</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">  </span><span class="k">throw</span><span class="w"> </span><span class="nx">error</span><span class="p">;</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="mongodb_4">MongoDB<a class="headerlink" href="#mongodb_4" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">session</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">startSession</span><span class="p">();</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nx">session</span><span class="p">.</span><span class="nx">startTransaction</span><span class="p">();</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">insertOne</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="w"> </span><span class="p">});</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">orders</span><span class="p">.</span><span class="nx">insertOne</span><span class="p">({</span><span class="w"> </span><span class="nx">userId</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="w"> </span><span class="p">});</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">session</span><span class="p">.</span><span class="nx">commitTransaction</span><span class="p">();</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">session</span><span class="p">.</span><span class="nx">abortTransaction</span><span class="p">();</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">  </span><span class="k">throw</span><span class="w"> </span><span class="nx">error</span><span class="p">;</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h2>
+<h3 id="sql-injection-prevention">SQL Injection Prevention<a class="headerlink" href="#sql-injection-prevention" title="Permanent link">&para;</a></h3>
+<p>❌ <strong>Bad</strong> (SQL Injection vulnerable):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`SELECT * FROM users WHERE email = &#39;</span><span class="si">${</span><span class="nx">email</span><span class="si">}</span><span class="sb">&#39;`</span><span class="p">;</span>
+</code></pre></div>
+<p>✅ <strong>Good</strong> (Using parameterized queries):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;SELECT * FROM users WHERE email = $1&quot;</span><span class="p">;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">pool</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="nx">query</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">email</span><span class="p">]);</span>
+</code></pre></div>
+<h3 id="mongodb-injection-prevention">MongoDB Injection Prevention<a class="headerlink" href="#mongodb-injection-prevention" title="Permanent link">&para;</a></h3>
+<p>❌ <strong>Bad</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span><span class="w"> </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">email</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<p>✅ <strong>Good</strong> (Validate input):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">email</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">;</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">email</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Invalid input&quot;</span><span class="p">);</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">await</span><span class="w"> </span><span class="nx">users</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span><span class="w"> </span><span class="nx">email</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<h2 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># .env</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nv">DATABASE_URL</span><span class="o">=</span>postgresql://user:password@localhost:5432/mydb
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="nv">MYSQL_URL</span><span class="o">=</span>mysql://user:password@localhost:3306/mydb
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="nv">MONGODB_URL</span><span class="o">=</span>mongodb://localhost:27017/mydb
+</code></pre></div>
+<h2 id="docker-setup">Docker Setup<a class="headerlink" href="#docker-setup" title="Permanent link">&para;</a></h2>
+<p>See the <a href="../../devops/docker/index.md">Docker section</a> for containerized database setup.</p>
 
 
 
@@ -1113,7 +1627,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../frontend-development/nextjs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Next.js">
+          <a href="../frontend-development/react-native/" class="md-footer__link md-footer__link--prev" aria-label="Previous: React Native">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1123,14 +1637,14 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Next.js
+                React Native
               </div>
             </div>
           </a>
         
         
           
-          <a href="database/mongodb/" class="md-footer__link md-footer__link--next" aria-label="Next: MongoDB">
+          <a href="mongodb/" class="md-footer__link md-footer__link--next" aria-label="Next: MongoDB">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
